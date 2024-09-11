@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class PlayerService : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private PlayerView playerView;
+    private PlayerModel playerModel;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        playerModel = new PlayerModel();
+        PlayerController playerController = new PlayerController(playerView, playerModel);
+        playerView.SetPlayerController(playerController);
     }
 }
