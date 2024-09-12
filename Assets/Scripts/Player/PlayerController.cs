@@ -20,9 +20,23 @@ public class PlayerController
         // if(Input.GetKey(KeyCode.D)) playerView.transform.Translate(Vector2.right * playerModel.playerSpeed * Time.deltaTime);
         //   if(Input.GetKey(KeyCode.A)) playerView.transform.Translate(Vector2.left * playerModel.playerSpeed * Time.deltaTime);
         // if (Input.GetKey(KeyCode.Space)) rigidbody.AddForce(Vector2.up* 20);
+
         //  if (Input.GetKeyDown(KeyCode.Space) && playerModel.IsPlayerStandingOnPlatform()) playerView.GetRigidBody().AddForce(Vector2.up*playerModel.GetPlayerJumpForce());
-        if (playerModel.moveLeft) playerView.transform.Translate(Vector2.left * playerModel.playerSpeed * Time.deltaTime);
-        if (playerModel.moveRIght) playerView.transform.Translate(Vector2.right * playerModel.playerSpeed * Time.deltaTime);
+
+        if (playerModel.moveLeft)
+        {
+            playerView.transform.Translate(Vector2.left * playerModel.playerSpeed * Time.deltaTime);
+             playerView.spriteRenderer.flipX = true;
+           // playerView.transform.Rotate(0, 180, 0);
+        }
+
+        if (playerModel.moveRIght) 
+        {
+            playerView.transform.Translate(Vector2.right * playerModel.playerSpeed * Time.deltaTime);
+              playerView.spriteRenderer.flipX = false;
+        //    playerView.transform.Rotate(0, 0, 0);
+        }
+
         if (playerModel.jump)
         {
             Debug.Log("running jump");
@@ -35,15 +49,33 @@ public class PlayerController
     {
         return playerModel;
     }
-    public void HandlePlayerInputs()
+    public void HandlePlayerInputs(Bullet bullet)
     {
+
         if (Input.GetKey(KeyCode.A)) playerModel.moveLeft = true; else playerModel.moveLeft = false;
         if (Input.GetKey(KeyCode.D)) playerModel.moveRIght = true; else playerModel.moveRIght = false;
         if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(playerView.GetRigidBody().velocity.y) < 0.001) playerModel.jump = true;
+        if (Input.GetKey(KeyCode.Space)) FireBullet(bullet);
     }
-    public bool isPlPlatformed()
+    //public bool isPlatformed()
+    //{
+    //    return playerModel.isPlatformed;
+    //}
+    public void FlipCharacter()
     {
-        return playerModel.isPlatformed;
-    }
 
+    }
+    public void FireBullet(Bullet bullet)
+    {
+        Debug.Log("running fire bullet function ");
+        Bullet newBullet = GameObject.Instantiate<Bullet>(bullet);
+        newBullet.transform.position = playerView.bulletSpawnPoint.transform.position;
+       // newBullet.transform.Translate(Vector2.right);
+        
+        //newBullet.transform.position(playerView.)
+    //    newBullet.MoveTowardsTarget();
+        
+        
+    
+    }
 }

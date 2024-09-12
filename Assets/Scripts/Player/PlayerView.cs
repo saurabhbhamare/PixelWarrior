@@ -8,7 +8,10 @@ public class PlayerView : MonoBehaviour
     [SerializeField] private Rigidbody2D rigidbody;
     [SerializeField] private BoxCollider2D boxCollider;
     [SerializeField] private LayerMask platformLayer;
-    [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] public Bullet bullet;
+    public Transform bulletSpawnPoint;
+  //  [SerializeField] private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
 
     private bool isOnPlatform;
     void Start()
@@ -19,7 +22,8 @@ public class PlayerView : MonoBehaviour
     {
         //isOnPlatform=  Physics2D.OverlapCircle(transform.position, 0.1f, platformLayer);
         //playerController.GetPlayerModel().SetPlayerStandingState(isOnPlatform);
-        playerController.HandlePlayerInputs();
+        playerController.HandlePlayerInputs(bullet);
+        
         
         //playerController.HandlePlayerMovement();
     }
