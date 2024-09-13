@@ -8,7 +8,6 @@ public class EnemyView : MonoBehaviour
     private float speed=2f;
     private bool movingRight; 
     private float rayDist = 2f;
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);

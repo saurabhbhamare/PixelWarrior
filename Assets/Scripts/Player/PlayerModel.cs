@@ -9,10 +9,11 @@ public class PlayerModel
     public bool moveRIght;
     public bool moveLeft;
     public bool jump;
-
+   // public BulletPool bulletPool;
 
     public PlayerModel()
     {
+      //  bulletPool = new BulletPool();
         playerSpeed = 6f;
         jumpForce = 430f;
     }
@@ -20,12 +21,5 @@ public class PlayerModel
     {
         return jumpForce; 
     }
-    //public bool IsPlayerStandingOnPlatform()
-    //{
-    //    return isPlatformed;
-    //}
-    //public void SetPlayerStandingState(bool state)
-    //{
-    //    isPlatformed = state;
-    //}
+
 }

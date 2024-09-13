@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class MainMenu : MonoBehaviour
+
+public class GameOverController : MonoBehaviour
 {
-    [SerializeField] private Button playButton;
-    public void PlayGame()
+  public void RestartGame()
     {
         SceneManager.LoadScene("Level1");
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainScreen");
     }
 }

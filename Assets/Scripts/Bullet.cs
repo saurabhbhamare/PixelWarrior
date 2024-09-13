@@ -10,10 +10,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
-        
     }
-
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.right*bulletSpeed);

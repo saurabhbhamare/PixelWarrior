@@ -5,27 +5,21 @@ using UnityEngine;
 public class PlayerView : MonoBehaviour
 {
     private PlayerController playerController;
-    [SerializeField] private Rigidbody2D rigidbody;
-    [SerializeField] private BoxCollider2D boxCollider;
-    [SerializeField] private LayerMask platformLayer;
+    private Rigidbody2D rigidbody;
+    private BoxCollider2D boxCollider;
     [SerializeField] public Bullet bullet;
-    public Transform bulletSpawnPoint;
-  //  [SerializeField] private SpriteRenderer spriteRenderer;
+    [SerializeField] private GameObject gameOverScreen;
     public SpriteRenderer spriteRenderer;
 
     private bool isOnPlatform;
     void Start()
     {
-        
+        rigidbody = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
    private void Update()
     {
-        //isOnPlatform=  Physics2D.OverlapCircle(transform.position, 0.1f, platformLayer);
-        //playerController.GetPlayerModel().SetPlayerStandingState(isOnPlatform);
         playerController.HandlePlayerInputs(bullet);
-        
-        
-        //playerController.HandlePlayerMovement();
     }
     private void FixedUpdate()
     {
@@ -38,5 +32,12 @@ public class PlayerView : MonoBehaviour
     public Rigidbody2D GetRigidBody()
     {
         return rigidbody;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       if(collision.gameObject.name == "EkansVisual")
+        {
+            gameOverScreen.SetActive(true);
+        }
     }
 }
