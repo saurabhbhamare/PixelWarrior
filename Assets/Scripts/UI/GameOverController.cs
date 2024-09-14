@@ -8,10 +8,13 @@ public class GameOverController : MonoBehaviour
 {
   public void RestartGame()
     {
+        
         SceneManager.LoadScene("Level1");
+        Time.timeScale = 1;
     }
     public void MainMenu()
     {
         SceneManager.LoadScene("MainScreen");
+        Time.timeScale = 1;
     }
 }

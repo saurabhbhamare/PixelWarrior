@@ -37,7 +37,12 @@ public class PlayerView : MonoBehaviour
     {
        if(collision.gameObject.name == "EkansVisual")
         {
+            Time.timeScale = 0;
             gameOverScreen.SetActive(true);
+        }
+       if(collision.gameObject.name == "Door")
+        {
+            Debug.Log("collided with door");
         }
     }
 }
