@@ -7,7 +7,7 @@ public class EnemyView : MonoBehaviour
     [SerializeField] private Transform groundDetect;
     private float speed=2f;
     private bool movingRight; 
-    private float rayDist = 2f;
+    private float rayDist = 1f;
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
