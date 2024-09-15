@@ -20,8 +20,7 @@ Git
 ## Installation
 
 Clone the repository:
-git clone https://github.com/yourusername/2D-Platformer-Game.git
-
+git clone https://github.com/saurabhbhamare/PixelWarrior
 Open the project in Unity:
 Open Unity Hub.
 Click on “Add” and select the cloned project folder.
