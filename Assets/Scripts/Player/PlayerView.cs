@@ -10,12 +10,14 @@ public class PlayerView : MonoBehaviour
     [SerializeField] public Bullet bullet;
     [SerializeField] private GameObject gameOverScreen;
     public SpriteRenderer spriteRenderer;
+    private Animator animator;
 
     private bool isOnPlatform;
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
    private void Update()
     {
@@ -44,5 +46,9 @@ public class PlayerView : MonoBehaviour
         {
             Debug.Log("collided with door");
         }
+    }
+    public Animator GetAnimator()
+    {
+        return animator;
     }
 }
