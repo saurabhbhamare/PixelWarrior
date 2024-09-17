@@ -63,7 +63,7 @@ public PlayerModel GetPlayerModel()
     }
     public void FireBullet(Bullet bullet)
     {
-        Debug.Log("running fire bullet function ");
+        //Debug.Log("running fire bullet function ");
       //  Bullet newBullet = GameObject.Instantiate<Bullet>(bullet);
       //  newBullet.transform.position = playerView.bulletSpawnPoint.transform.position;
        // newBullet.transform.Translate(Vector2.right);
