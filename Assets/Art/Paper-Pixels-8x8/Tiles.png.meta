@@ -5562,7 +5562,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_255
+      name: f_Grass01
       rect:
         serializedVersion: 2
         x: 61
@@ -6389,7 +6389,7 @@ TextureImporter:
         width: 32
         height: 5
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6397,6 +6397,48 @@ TextureImporter:
       bones: []
       spriteID: b94fafc320791874896023aa5c8d98db
       internalID: -1964544408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_Spike01
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 584
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbd4dab75dbc3e42afbeec53ef943af
+      internalID: -575468283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_Spike02
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 593
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2336ae477feb16340af52610e933fa8e
+      internalID: -2139278277
       vertices: []
       indices: 
       edges: []
@@ -6583,7 +6625,6 @@ TextureImporter:
       Tiles_252: 1682082205
       Tiles_253: 1924815212
       Tiles_254: -372203844
-      Tiles_255: -777054477
       Tiles_256: -777054477
       Tiles_257: -777054477
       Tiles_258: -777054477
@@ -6682,7 +6723,10 @@ TextureImporter:
       f_FlowerRed: -189720467
       f_FlowerViolet: 52909261
       f_FlowerYellow: 1449668908
+      f_Grass01: 2040080628
       f_PlainPlatform: -1964544408
+      f_Spike01: -575468283
+      f_Spike02: -2139278277
       f_Tiles_10: 515893265
       f_Tiles_12: 1436401187
       f_Tiles_13: 236523612

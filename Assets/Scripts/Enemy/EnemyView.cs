@@ -12,6 +12,7 @@ public class EnemyView : MonoBehaviour
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
         RaycastHit2D groundCheck = Physics2D.Raycast(groundDetect.position, Vector2.down, rayDist);
+        Debug.DrawRay(transform.position, Vector2.down * rayDist, Color.red);
 
         if (groundCheck.collider == false)
         {
