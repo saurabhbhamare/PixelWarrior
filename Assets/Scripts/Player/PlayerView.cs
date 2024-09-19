@@ -7,10 +7,9 @@ public class PlayerView : MonoBehaviour
     private PlayerController playerController;
     private Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
-    [SerializeField] public Bullet bullet;
-    [SerializeField] private GameObject gameOverScreen;
     public SpriteRenderer spriteRenderer;
     private Animator animator;
+    public Transform bulletSpawnPoint;
 
     private bool isOnPlatform;
     void Start()
@@ -21,7 +20,7 @@ public class PlayerView : MonoBehaviour
     }
    private void Update()
     {
-        playerController.HandlePlayerInputs(bullet);
+        playerController.HandlePlayerInputs();
     }
     private void FixedUpdate()
     {
@@ -34,18 +33,6 @@ public class PlayerView : MonoBehaviour
     public Rigidbody2D GetRigidBody()
     {
         return rigidbody;
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-       if(collision.gameObject.name == "EkansVisual")
-        {
-            Time.timeScale = 0;
-            gameOverScreen.SetActive(true);
-        }
-       if(collision.gameObject.name == "Door")
-        {
-            Debug.Log("collided with door");
-        }
     }
     public Animator GetAnimator()
     {
