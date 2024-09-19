@@ -6443,6 +6443,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: f_LeftPlatform01
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 600
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be14dd972cbf8140bae4e87f3f73414
+      internalID: 877891689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_RightPlatform01
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 600
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500de44ae73dd004c92ac59c40173c7a
+      internalID: -1505803161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_PlainPlatformSmall01
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 606
+        width: 17
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e8c130d34240b448c2a8fa9f35a71f
+      internalID: -146363528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -6724,7 +6787,10 @@ TextureImporter:
       f_FlowerViolet: 52909261
       f_FlowerYellow: 1449668908
       f_Grass01: 2040080628
+      f_LeftPlatform01: 877891689
       f_PlainPlatform: -1964544408
+      f_PlainPlatformSmall01: -146363528
+      f_RightPlatform01: -1505803161
       f_Spike01: -575468283
       f_Spike02: -2139278277
       f_Tiles_10: 515893265
