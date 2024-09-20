@@ -21,13 +21,13 @@ public class BulletPool : MonoBehaviour
     Bullet CreatePooledBullet()
     {
         PooledBullet newBullet = new PooledBullet();
-        //  newBullet = Instantiate<Bullet>(bulletPrefab)
+        //newBullet = Instantiate<Bullet>(bulletPrefab)
         newBullet.bullet = Instantiate<Bullet>(bulletPrefab);
         newBullet.isUsed = true;
         pooledBullets.Add(newBullet);
         return newBullet.bullet;
+        Debug.Log("Number of Bullets in the pool" + pooledBullets.Count);
     }
-
     public class PooledBullet
     {
         public Bullet bullet;

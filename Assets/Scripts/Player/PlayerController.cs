@@ -7,16 +7,16 @@ public class PlayerController
     private PlayerView playerView;
     private PlayerModel playerModel;
     BulletPool bulletPool;
-   // public Bullet bullet;
-
+    public Bullet bullet;
+     
     //  private Rigidbody2D rigidbody;
-    public PlayerController(PlayerView playerView, PlayerModel playerModel)
+    public PlayerController(PlayerView playerView, PlayerModel playerModel,Bullet bullet)
     {
         this.playerView = playerView;
         this.playerModel = playerModel;
         playerView.SetPlayerController(this);
         bulletPool = new BulletPool();
-        //this.bullet = bullet;
+        this.bullet = bullet;
     }
     public void HandlePlayerMovement()
     {
@@ -41,7 +41,6 @@ public class PlayerController
         if (playerModel.jump)
         {
             Debug.Log("running jump");
-            //  playerView.GetAnimator().SetBool("IsJumping", true);
             playerView.GetRigidBody().AddForce(Vector2.up * playerModel.GetPlayerJumpForce());
             playerModel.jump = false;
         }
@@ -53,13 +52,10 @@ public class PlayerController
     }
     public void HandlePlayerInputs()
     {
-
         if (Input.GetKey(KeyCode.A)) playerModel.moveLeft = true; else playerModel.moveLeft = false;
         if (Input.GetKey(KeyCode.D)) playerModel.moveRIght = true; else playerModel.moveRIght = false;
         if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(playerView.GetRigidBody().velocity.y) < 0.001) playerModel.jump = true;
-     //   if (Input.GetKeyDown(KeyCode.Space)) FireBullet(bullet);
-       
-
+        if (Input.GetKeyDown(KeyCode.Space)) FireBullet(bullet);
     }
 
     public void FlipCharacter()
@@ -69,7 +65,9 @@ public class PlayerController
     public void FireBullet(Bullet bullet)
     {
         Debug.Log("running fire bullet function ");
-        Bullet newBullet = GameObject.Instantiate<Bullet>(bullet);
+      //  Bullet newBullet = GameObject.Instantiate<Bullet>(bullet);
+      Bullet newBullet = bulletPool.GetPooledBullet();
+      
         newBullet.transform.position = playerView.bulletSpawnPoint.transform.position;
         newBullet.transform.Translate(Vector2.right);
 
@@ -92,10 +90,10 @@ public class PlayerController
         {
             playerView.GetAnimator().SetBool("IsJumping", false);
         }
-        //else
-        //{
-        //    playerView.GetAnimator().SetBool("IsRunning", false);
-        //    playerView.GetAnimator().SetBool("IsJumping", false);
-        //}
+      
+    }
+    public void TakePlayerDamage(float damage)
+    {
+        playerModel.playerHealth -= damage;
     }
 }

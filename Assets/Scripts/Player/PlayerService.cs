@@ -7,11 +7,14 @@ public class PlayerService
     // [SerializeField] private PlayerView playerView;
     private PlayerView playerView;
     private PlayerModel playerModel;
-    //private PlayerController playerController;
+    private Bullet bullet;
+    public PlayerController playerController;
 
-    public PlayerService(PlayerView playerView)
+    public PlayerService(PlayerView playerView,Bullet bullet)
     {
         this.playerView = playerView;
+        this.bullet = bullet;
+        
         playerModel = new PlayerModel();
         InitializePlayer();
         
@@ -26,7 +29,8 @@ public class PlayerService
 
     private void InitializePlayer()
     {
-        PlayerController playerController = new PlayerController(playerView, playerModel);
+         playerController = new PlayerController(playerView, playerModel,bullet);
         playerView.SetPlayerController(playerController);
     }
+    
 }

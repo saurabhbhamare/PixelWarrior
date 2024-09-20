@@ -9,6 +9,7 @@ public class PlayerModel
     public bool moveRIght;
     public bool moveLeft;
     public bool jump;
+    public float playerHealth = 100;
     // public BulletPool bulletPool;
 
     public PlayerModel()

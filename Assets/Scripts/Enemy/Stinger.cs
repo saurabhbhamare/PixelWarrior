@@ -6,6 +6,7 @@ public class Stinger : MonoBehaviour
 {
     public GameObject bullet;
     public float spawnInterval;
+   // public PlayerService playerService;
     private void Start() 
     {
         StartCoroutine(Attack());

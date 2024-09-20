@@ -903,8 +903,8 @@ TextureImporter:
       name: f_Tiles_37
       rect:
         serializedVersion: 2
-        x: 0
-        y: 500
+        x: 1
+        y: 507
         width: 80
         height: 13
       alignment: 0
@@ -1278,7 +1278,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_55
+      name: f_SmallTree01
       rect:
         serializedVersion: 2
         x: 132
@@ -6494,7 +6494,7 @@ TextureImporter:
         width: 17
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6502,6 +6502,48 @@ TextureImporter:
       bones: []
       spriteID: 89e8c130d34240b448c2a8fa9f35a71f
       internalID: -146363528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_PlainPlatform04
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 500
+        width: 23
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d3f5a4a95f7d014e9d3fc4dca5269b6
+      internalID: -51881577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_PlainPlatform05
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 500
+        width: 29
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7ce5877c7bff049bf54a91c9782d70
+      internalID: -2054503435
       vertices: []
       indices: 
       edges: []
@@ -6726,7 +6768,6 @@ TextureImporter:
       Tiles_52: -1389299829
       Tiles_53: -1766106211
       Tiles_54: 228873601
-      Tiles_55: 385473314
       Tiles_56: 933832747
       Tiles_57: 1988059964
       Tiles_58: 2093763336
@@ -6789,8 +6830,11 @@ TextureImporter:
       f_Grass01: 2040080628
       f_LeftPlatform01: 877891689
       f_PlainPlatform: -1964544408
+      f_PlainPlatform04: -51881577
+      f_PlainPlatform05: -2054503435
       f_PlainPlatformSmall01: -146363528
       f_RightPlatform01: -1505803161
+      f_SmallTree01: -1766106211
       f_Spike01: -575468283
       f_Spike02: -2139278277
       f_Tiles_10: 515893265

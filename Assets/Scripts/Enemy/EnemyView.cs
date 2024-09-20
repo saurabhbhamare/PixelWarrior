@@ -8,6 +8,8 @@ public class EnemyView : MonoBehaviour
     private float speed=2f;
     private bool movingRight; 
     private float rayDist = 1f;
+    public float AttackDamage;
+   public PlayerService playerService;
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -28,5 +30,16 @@ public class EnemyView : MonoBehaviour
 
             }
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.GetComponent<PlayerView>())
+        {
+            
+        }
+    }
+    public void Attack()
+    {
+        
     }
 }

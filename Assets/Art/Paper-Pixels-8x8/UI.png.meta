@@ -2243,6 +2243,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI_WhitePixel
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 101
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c853dd3d2502c204db9466bc3aef2e48
+      internalID: -901753364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2350,6 +2371,7 @@ TextureImporter:
       UI_KeyIcon: 820721292
       UI_PlayerUIIcon: -77393142
       UI_SkullIcon: -668687517
+      UI_WhitePixel: -901753364
       V: 1885807416
       W: -2032586338
       X: 1150904799

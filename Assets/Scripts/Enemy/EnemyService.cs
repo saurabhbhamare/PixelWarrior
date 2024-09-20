@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyService : MonoBehaviour
+public class EnemyService 
 {
-    // Start is called before the first frame update
-    void Start()
+    private PlayerService playerService;
+    public EnemyService(PlayerService playerService)
     {
-        
+        this.playerService = playerService; 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

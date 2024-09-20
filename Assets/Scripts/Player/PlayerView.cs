@@ -10,6 +10,7 @@ public class PlayerView : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     private Animator animator;
     public Transform bulletSpawnPoint;
+    public PlayerUIController playerUIController;
 
     private bool isOnPlatform;
     void Start()
@@ -37,5 +38,14 @@ public class PlayerView : MonoBehaviour
     public Animator GetAnimator()
     {
         return animator;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.GetComponent<StingerBullet>())
+        {
+            playerController.TakePlayerDamage(10);
+            Debug.Log(playerController.GetPlayerModel().playerHealth);
+            playerUIController.UpdateHealthBarUIAfterTakingDamage(10f);
+        }
     }
 }

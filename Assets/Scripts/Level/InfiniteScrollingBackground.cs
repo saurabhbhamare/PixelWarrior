@@ -10,13 +10,8 @@ public class InfiniteScrollingBackground : MonoBehaviour
     public Vector3 posb1;
     public Vector3 posb2;
 
-    private void Start()
-    {
-        
-    }
-
     private void Update()
     {
-        background1.transform.Translate(Vector2.down);
+        background1.transform.Translate(Vector2.down*speed*Time.deltaTime);
     }
 }
