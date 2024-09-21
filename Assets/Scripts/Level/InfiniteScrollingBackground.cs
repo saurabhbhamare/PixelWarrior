@@ -19,6 +19,7 @@ public class InfiniteScrollingBackground : MonoBehaviour
     {
         MoveBackground(background1);
         MoveBackground(background2);
+         
 
         if (background1.transform.position.y <= -backgroundHeight)
         {

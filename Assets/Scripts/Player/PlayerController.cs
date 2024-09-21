@@ -10,13 +10,14 @@ public class PlayerController
     public Bullet bullet;
      
     //  private Rigidbody2D rigidbody;
-    public PlayerController(PlayerView playerView, PlayerModel playerModel,Bullet bullet)
+    public PlayerController(PlayerView playerView, PlayerModel playerModel,Bullet bullet,BulletPool bulletPool)
     {
         this.playerView = playerView;
         this.playerModel = playerModel;
         playerView.SetPlayerController(this);
-        bulletPool = new BulletPool();
         this.bullet = bullet;
+        bulletPool = new BulletPool(bullet);
+        this.bulletPool = bulletPool;
     }
     public void HandlePlayerMovement()
     {
@@ -40,7 +41,7 @@ public class PlayerController
 
         if (playerModel.jump)
         {
-            Debug.Log("running jump");
+           // Debug.Log("running jump");
             playerView.GetRigidBody().AddForce(Vector2.up * playerModel.GetPlayerJumpForce());
             playerModel.jump = false;
         }
@@ -64,11 +65,13 @@ public class PlayerController
     }
     public void FireBullet(Bullet bullet)
     {
-        Debug.Log("running fire bullet function ");
+      //  Debug.Log("running fire bullet function ");
       //  Bullet newBullet = GameObject.Instantiate<Bullet>(bullet);
-      Bullet newBullet = bulletPool.GetPooledBullet();
+        Bullet newBullet = bulletPool.GetPooledBullet();
       
         newBullet.transform.position = playerView.bulletSpawnPoint.transform.position;
+        Debug.Log("Number of bullets in the pool are" + bulletPool.pooledBullets.Count);
+
         newBullet.transform.Translate(Vector2.right);
 
     }

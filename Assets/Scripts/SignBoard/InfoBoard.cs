@@ -17,7 +17,7 @@ public class InfoBoard : MonoBehaviour
         {
             hintUI.gameObject.SetActive(true);
         }
-        Debug.Log("collsion for infoboard happened");
+        //Debug.Log("collsion for infoboard happened");
 
     }
     private void OnTriggerExit2D(Collider2D other)

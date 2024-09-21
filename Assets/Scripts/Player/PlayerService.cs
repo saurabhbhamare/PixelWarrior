@@ -9,12 +9,14 @@ public class PlayerService
     private PlayerModel playerModel;
     private Bullet bullet;
     public PlayerController playerController;
+    private BulletPool bulletPool;
 
-    public PlayerService(PlayerView playerView,Bullet bullet)
+    public PlayerService(PlayerView playerView,Bullet bullet,BulletPool bulletPool)
     {
         this.playerView = playerView;
         this.bullet = bullet;
-        
+        this.bulletPool = bulletPool;
+
         playerModel = new PlayerModel();
         InitializePlayer();
         
@@ -29,8 +31,8 @@ public class PlayerService
 
     private void InitializePlayer()
     {
-         playerController = new PlayerController(playerView, playerModel,bullet);
-        playerView.SetPlayerController(playerController);
+         playerController = new PlayerController(playerView, playerModel,bullet,bulletPool);
+         playerView.SetPlayerController(playerController);
     }
     
 }

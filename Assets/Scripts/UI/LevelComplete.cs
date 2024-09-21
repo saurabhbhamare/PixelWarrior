@@ -9,7 +9,7 @@ public class LevelComplete : MonoBehaviour
     {
        if (collision.gameObject.GetComponentInParent<PlayerView>())
         {
-            Debug.Log("collision happened");
+         //   Debug.Log("collision happened");
                 Time.timeScale = 0;
             levelCompletionPanel.SetActive(true);
         }

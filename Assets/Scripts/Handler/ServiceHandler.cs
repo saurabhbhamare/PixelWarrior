@@ -6,6 +6,7 @@ public class ServiceHandler : MonoBehaviour
 {
     [SerializeField] private PlayerView playerView;
     [SerializeField] private PlayerUIController playerUIController;
+    public BulletPool bulletPool;
     //Services
     private PlayerService playerService;
     private EnemyService enemyService;
@@ -18,7 +19,7 @@ public class ServiceHandler : MonoBehaviour
     }
     private void InitializeServices()
     {
-        playerService = new PlayerService(playerView,bullet);
+        playerService = new PlayerService(playerView,bullet,bulletPool);
         enemyService = new EnemyService(playerService);
         uiService = new UIService(playerUIController);
     }

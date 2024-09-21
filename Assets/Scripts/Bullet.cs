@@ -20,4 +20,8 @@ public class Bullet : MonoBehaviour
         //rigidbody.velocity = transform.right * bulletSpeed;
 
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
 }

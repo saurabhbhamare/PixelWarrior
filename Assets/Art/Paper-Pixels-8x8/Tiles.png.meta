@@ -903,8 +903,8 @@ TextureImporter:
       name: f_Tiles_37
       rect:
         serializedVersion: 2
-        x: 1
-        y: 507
+        x: 0
+        y: 500
         width: 80
         height: 13
       alignment: 0
@@ -5772,7 +5772,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_266
+      name: f_Stone01
       rect:
         serializedVersion: 2
         x: 27
@@ -5793,7 +5793,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_267
+      name: f_Stone02
       rect:
         serializedVersion: 2
         x: 36
@@ -6536,7 +6536,7 @@ TextureImporter:
         width: 29
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6544,6 +6544,69 @@ TextureImporter:
       bones: []
       spriteID: fc7ce5877c7bff049bf54a91c9782d70
       internalID: -2054503435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_GrassAndStonesFullSet01
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 616
+        width: 36
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fbffac7ea9eb44897130ba26e254c2
+      internalID: -2066978033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 504
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c0a496880f4bf439c390b46fc640a1
+      internalID: -479394851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_PixelWaterMid01
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 507
+        width: 29
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86520aa2d115699498ef9019ecd9003a
+      internalID: -520822346
       vertices: []
       indices: 
       edges: []
@@ -6741,8 +6804,6 @@ TextureImporter:
       Tiles_263: 1381911245
       Tiles_264: 1740246795
       Tiles_265: 1990077355
-      Tiles_266: 1331189808
-      Tiles_267: 2008539300
       Tiles_27: -722939063
       Tiles_271: 1049638356
       Tiles_272: 125523777
@@ -6794,6 +6855,7 @@ TextureImporter:
       Tiles_77: 1963276105
       Tiles_78: -1573909445
       Tiles_79: 996579581
+      Tiles_8: -479394851
       Tiles_80: -559298166
       Tiles_81: 1579658087
       Tiles_82: 1426480672
@@ -6828,7 +6890,9 @@ TextureImporter:
       f_FlowerViolet: 52909261
       f_FlowerYellow: 1449668908
       f_Grass01: 2040080628
+      f_GrassAndStonesFullSet01: -2066978033
       f_LeftPlatform01: 877891689
+      f_PixelWaterMid01: -520822346
       f_PlainPlatform: -1964544408
       f_PlainPlatform04: -51881577
       f_PlainPlatform05: -2054503435
@@ -6837,6 +6901,8 @@ TextureImporter:
       f_SmallTree01: -1766106211
       f_Spike01: -575468283
       f_Spike02: -2139278277
+      f_Stone01: -778890664
+      f_Stone02: 861664880
       f_Tiles_10: 515893265
       f_Tiles_12: 1436401187
       f_Tiles_13: 236523612

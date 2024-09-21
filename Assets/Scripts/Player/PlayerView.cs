@@ -44,7 +44,7 @@ public class PlayerView : MonoBehaviour
         if(collision.gameObject.GetComponent<StingerBullet>())
         {
             playerController.TakePlayerDamage(10);
-            Debug.Log(playerController.GetPlayerModel().playerHealth);
+          //  Debug.Log(playerController.GetPlayerModel().playerHealth);
             playerUIController.UpdateHealthBarUIAfterTakingDamage(10f);
         }
     }
