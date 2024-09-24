@@ -9120,7 +9120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e11a199f72fb1644696b7995a726f0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
 --- !u!4 &1478830322
 Transform:
   m_ObjectHideFlags: 0

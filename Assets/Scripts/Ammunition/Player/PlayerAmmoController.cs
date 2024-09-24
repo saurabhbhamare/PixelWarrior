@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAmmoController
 {
     public PlayerAmmoView playerAmmoView;
-    public float ammoSpeed = 1f;
+    public float ammoSpeed = 6f;
     public PlayerAmmoController(PlayerAmmoView playerAmmoView)
     {
         this.playerAmmoView = Object.Instantiate(playerAmmoView);

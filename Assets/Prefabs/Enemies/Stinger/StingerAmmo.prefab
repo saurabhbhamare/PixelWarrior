@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5514199556355567228}
   - component: {fileID: 2496123450533592632}
   m_Layer: 0
-  m_Name: StingerBullet
+  m_Name: StingerAmmo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
