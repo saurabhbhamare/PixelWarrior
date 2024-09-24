@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerView : MonoBehaviour
 {
     private PlayerController playerController;
-    private Rigidbody2D rigidbody;
+    public Rigidbody2D rigidbody;
     private BoxCollider2D boxCollider;
     public SpriteRenderer spriteRenderer;
     private Animator animator;

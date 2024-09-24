@@ -7,17 +7,17 @@ public class PlayerService
     // [SerializeField] private PlayerView playerView;
     private PlayerView playerView;
     private PlayerModel playerModel;
-    private Bullet bullet;
-    public PlayerController playerController;
-    private BulletPool bulletPool;
+    private PlayerAmmoView playerAmmoView;
+    public static PlayerController playerController;
+    private PlayerAmmoPool playerAmmoPool;
 
-    public PlayerService(PlayerView playerView,Bullet bullet,BulletPool bulletPool)
+    public PlayerService(PlayerView playerView, PlayerAmmoView playerAmmoView)
     {
         this.playerView = playerView;
-        this.bullet = bullet;
-        this.bulletPool = bulletPool;
-
+        this.playerAmmoView = playerAmmoView;
         playerModel = new PlayerModel();
+        this.playerAmmoPool = new PlayerAmmoPool(playerAmmoView);  
+
         InitializePlayer();
         
     }
@@ -31,7 +31,7 @@ public class PlayerService
 
     private void InitializePlayer()
     {
-         playerController = new PlayerController(playerView, playerModel,bullet,bulletPool);
+         playerController = new PlayerController(playerView, playerModel,playerAmmoPool);
          playerView.SetPlayerController(playerController);
     }
     

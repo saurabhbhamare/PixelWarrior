@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBase : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     protected int health;
     protected int strikeDamage;
@@ -14,4 +14,18 @@ public class EnemyBase : MonoBehaviour
         strikeDamage = 10;
         moveSpeed = 10f;
     }
+    protected void Attack()
+    {
+
+    }
+    protected void TakeDamage()
+    {
+
+    }
+    protected void HandleEnemyMovement()
+    {
+
+    }
+  
+
 }

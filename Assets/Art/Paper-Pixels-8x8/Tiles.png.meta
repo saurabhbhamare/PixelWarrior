@@ -904,7 +904,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 500
+        y: 499
         width: 80
         height: 13
       alignment: 0
@@ -6570,7 +6570,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_8
+      name: f_NextLevelCheckPoint01
       rect:
         serializedVersion: 2
         x: 73
@@ -6607,6 +6607,69 @@ TextureImporter:
       bones: []
       spriteID: 86520aa2d115699498ef9019ecd9003a
       internalID: -520822346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_WaterSmall01
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 507
+        width: 21
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792a76cf29be0d44596ba4aee6122ae4
+      internalID: 941095390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_SmallPlatform02
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 500
+        width: 11
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f722b60329c7bf4186fcf3cf7ac3f57
+      internalID: -447204656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_SmallPlainPlatform01
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 503
+        width: 9
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9533e45c43684b4f8599f8b473b9d65
+      internalID: -1309108707
       vertices: []
       indices: 
       edges: []
@@ -6855,7 +6918,6 @@ TextureImporter:
       Tiles_77: 1963276105
       Tiles_78: -1573909445
       Tiles_79: 996579581
-      Tiles_8: -479394851
       Tiles_80: -559298166
       Tiles_81: 1579658087
       Tiles_82: 1426480672
@@ -6892,12 +6954,15 @@ TextureImporter:
       f_Grass01: 2040080628
       f_GrassAndStonesFullSet01: -2066978033
       f_LeftPlatform01: 877891689
+      f_NextLevelCheckPoint01: -479394851
       f_PixelWaterMid01: -520822346
       f_PlainPlatform: -1964544408
       f_PlainPlatform04: -51881577
       f_PlainPlatform05: -2054503435
       f_PlainPlatformSmall01: -146363528
       f_RightPlatform01: -1505803161
+      f_SmallPlainPlatform01: -1309108707
+      f_SmallPlatform02: -447204656
       f_SmallTree01: -1766106211
       f_Spike01: -575468283
       f_Spike02: -2139278277
@@ -6932,6 +6997,7 @@ TextureImporter:
       f_Tiles_7: -1573909445
       f_Tiles_8: -917803692
       f_Tiles_9: 338132425
+      f_WaterSmall01: 941095390
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

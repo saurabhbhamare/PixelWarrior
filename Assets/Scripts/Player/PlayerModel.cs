@@ -4,19 +4,20 @@ using UnityEngine;
 
 public class PlayerModel
 {
-    private float jumpForce;
-    public float playerSpeed;
+    public float moveSpeed;
     public bool moveRIght;
     public bool moveLeft;
-    public bool jump;
+    public float jumpForce;
     public float playerHealth = 100;
+    public bool isJumping;
+    public bool isPlatformed;
     // public BulletPool bulletPool;
 
     public PlayerModel()
     {
         //  bulletPool = new BulletPool();
-        playerSpeed = 6f;
-        jumpForce = 430f;
+        moveSpeed = 6f;
+        jumpForce = 10f;
     }
     public float GetPlayerJumpForce()
     {

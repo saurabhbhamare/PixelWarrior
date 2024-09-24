@@ -2877,8 +2877,8 @@ TextureImporter:
       name: 4f_BeeMove_R04
       rect:
         serializedVersion: 2
-        x: 56
-        y: 105
+        x: 69
+        y: 108
         width: 8
         height: 6
       alignment: 0
@@ -3092,7 +3092,7 @@ TextureImporter:
         width: 1
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3113,7 +3113,7 @@ TextureImporter:
         width: 6
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3121,6 +3121,27 @@ TextureImporter:
       bones: []
       spriteID: 64d70d975fe9fb44f8a9176ab116772a
       internalID: -1350073237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_StingerBulletLarge
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 107
+        width: 1
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f73cbe1b4a673469b42f3ca7e44d96
+      internalID: -1455276366
       vertices: []
       indices: 
       edges: []
@@ -3281,6 +3302,7 @@ TextureImporter:
       Enemies_99: 1057408460
       f_SmallBullet: -155050210
       f_StingerBullet02: -1954158713
+      f_StingerBulletLarge: -1455276366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,6 +7,8 @@ public class PlayerUIController : MonoBehaviour
 {
     public Image playerHealthBar;
     private float healthAmount =100f;
+    public Image playerAmmoBar;
+
     
 
     // Update is called once per frame
