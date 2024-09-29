@@ -1488,13 +1488,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_65
+      name: UI_Med_LetterA
       rect:
         serializedVersion: 2
         x: 1
         y: 9
-        width: 6
-        height: 10
+        width: 7
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1530,13 +1530,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_67
+      name: UI_Med_LetterD
       rect:
         serializedVersion: 2
         x: 25
         y: 9
         width: 6
-        height: 11
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1551,13 +1551,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_68
+      name: UI_Med_LetterF
       rect:
         serializedVersion: 2
         x: 41
         y: 9
         width: 6
-        height: 10
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1572,13 +1572,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_69
+      name: UI_Med_LetterG
       rect:
         serializedVersion: 2
         x: 49
         y: 9
         width: 6
-        height: 11
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1614,7 +1614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_71
+      name: UI_Med_LetterB
       rect:
         serializedVersion: 2
         x: 9
@@ -1635,7 +1635,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_72
+      name: UI_Med_LetterC
       rect:
         serializedVersion: 2
         x: 17
@@ -1656,7 +1656,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_73
+      name: UI_Med_LetterE
       rect:
         serializedVersion: 2
         x: 33
@@ -1677,7 +1677,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_74
+      name: UI_Med_LetterH
       rect:
         serializedVersion: 2
         x: 57
@@ -1698,7 +1698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_75
+      name: UI_Med_LetterI
       rect:
         serializedVersion: 2
         x: 65
@@ -1719,7 +1719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_76
+      name: UI_Med_LetterJ
       rect:
         serializedVersion: 2
         x: 73
@@ -1740,7 +1740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_77
+      name: UI_Med_LetterK
       rect:
         serializedVersion: 2
         x: 81
@@ -1761,7 +1761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_78
+      name: UI_Med_LetterL
       rect:
         serializedVersion: 2
         x: 89
@@ -1782,7 +1782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_79
+      name: UI_Med_LetterM
       rect:
         serializedVersion: 2
         x: 97
@@ -1803,7 +1803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_80
+      name: UI_Med_LetterN
       rect:
         serializedVersion: 2
         x: 1
@@ -1824,7 +1824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_81
+      name: UI_Med_LetterO
       rect:
         serializedVersion: 2
         x: 9
@@ -1845,7 +1845,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_82
+      name: UI_Med_LetterP
       rect:
         serializedVersion: 2
         x: 17
@@ -1866,7 +1866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_83
+      name: UI_Med_LetterQ
       rect:
         serializedVersion: 2
         x: 25
@@ -1887,7 +1887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_84
+      name: UI_Med_LetterR
       rect:
         serializedVersion: 2
         x: 33
@@ -1908,7 +1908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_85
+      name: UI_Med_LetterS
       rect:
         serializedVersion: 2
         x: 41
@@ -1929,7 +1929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_86
+      name: UI_Med_LetterT
       rect:
         serializedVersion: 2
         x: 49
@@ -1950,7 +1950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_87
+      name: UI_Med_LetterU
       rect:
         serializedVersion: 2
         x: 57
@@ -1971,7 +1971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_88
+      name: UI_Med_LetterAV
       rect:
         serializedVersion: 2
         x: 65
@@ -1992,7 +1992,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_89
+      name: UI_Med_LetterW
       rect:
         serializedVersion: 2
         x: 73
@@ -2013,7 +2013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_90
+      name: UI_Med_LetterX
       rect:
         serializedVersion: 2
         x: 81
@@ -2034,7 +2034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_91
+      name: UI_Med_LetterY
       rect:
         serializedVersion: 2
         x: 89
@@ -2055,7 +2055,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: UI_92
+      name: UI_Med_LetterZ
       rect:
         serializedVersion: 2
         x: 97
@@ -2252,7 +2252,7 @@ TextureImporter:
         width: 1
         height: 1
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2330,35 +2330,9 @@ TextureImporter:
       UI_62: -1204250387
       UI_63: 2089751685
       UI_64: 346576894
-      UI_65: -1616205195
       UI_66: -629595921
-      UI_67: -1709807038
-      UI_68: 1702704201
-      UI_69: -170463574
       UI_7: -258176812
       UI_70: -1891037283
-      UI_71: 151744754
-      UI_72: 993803780
-      UI_73: 2104645324
-      UI_74: -1727552954
-      UI_75: 1595079720
-      UI_76: -664643720
-      UI_77: -556428836
-      UI_78: -1221058254
-      UI_79: -1499472291
-      UI_80: -1477214787
-      UI_81: -448078098
-      UI_82: 1138046385
-      UI_83: -874109662
-      UI_84: -1226167300
-      UI_85: 800277799
-      UI_86: -1934598407
-      UI_87: -1605742666
-      UI_88: 590121404
-      UI_89: -1076423536
-      UI_90: 993218848
-      UI_91: -1161993250
-      UI_92: 723341740
       UI_93: -238025463
       UI_94: 32112359
       UI_95: 1760866791
@@ -2369,6 +2343,32 @@ TextureImporter:
       UI_BulletsIcon: -533864488
       UI_HealthIcon: -1830750948
       UI_KeyIcon: 820721292
+      UI_Med_LetterA: -1616205195
+      UI_Med_LetterAV: 590121404
+      UI_Med_LetterB: 151744754
+      UI_Med_LetterC: 993803780
+      UI_Med_LetterD: -1709807038
+      UI_Med_LetterE: 2104645324
+      UI_Med_LetterF: 1702704201
+      UI_Med_LetterG: -170463574
+      UI_Med_LetterH: -1727552954
+      UI_Med_LetterI: 1595079720
+      UI_Med_LetterJ: -664643720
+      UI_Med_LetterK: -556428836
+      UI_Med_LetterL: -1221058254
+      UI_Med_LetterM: -1499472291
+      UI_Med_LetterN: -1477214787
+      UI_Med_LetterO: -448078098
+      UI_Med_LetterP: 1138046385
+      UI_Med_LetterQ: -874109662
+      UI_Med_LetterR: -1226167300
+      UI_Med_LetterS: 800277799
+      UI_Med_LetterT: -1934598407
+      UI_Med_LetterU: -1605742666
+      UI_Med_LetterW: -1076423536
+      UI_Med_LetterX: 993218848
+      UI_Med_LetterY: -1161993250
+      UI_Med_LetterZ: 723341740
       UI_PlayerUIIcon: -77393142
       UI_SkullIcon: -668687517
       UI_WhitePixel: -901753364

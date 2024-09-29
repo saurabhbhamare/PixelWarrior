@@ -6153,8 +6153,8 @@ TextureImporter:
       name: Tiles_7
       rect:
         serializedVersion: 2
-        x: 17
-        y: 561
+        x: 24
+        y: 576
         width: 7
         height: 5
       alignment: 0
@@ -6674,6 +6674,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: f_InventoryPanel1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 561
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a6cb0e7e3e7374c80bb22bf67078a2
+      internalID: -259822165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_InventoryIcon2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 569
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c872e7ab3f2d494fa6326788037c526
+      internalID: -480353845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -6953,6 +6995,8 @@ TextureImporter:
       f_FlowerYellow: 1449668908
       f_Grass01: 2040080628
       f_GrassAndStonesFullSet01: -2066978033
+      f_InventoryIcon2: -480353845
+      f_InventoryPanel1: -259822165
       f_LeftPlatform01: 877891689
       f_NextLevelCheckPoint01: -479394851
       f_PixelWaterMid01: -520822346

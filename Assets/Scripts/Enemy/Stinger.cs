@@ -9,7 +9,7 @@ public class Stinger : MonoBehaviour
    // public PlayerService playerService;
     private void Start() 
     {
-       // StartCoroutine(Attack());
+        StartCoroutine(Attack());
     }
     IEnumerator Attack()
     {

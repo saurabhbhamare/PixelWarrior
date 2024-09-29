@@ -21,7 +21,7 @@ public class PlayerController
     }
     public void HandlePlayerMovement()
     {
-        HandlePlayerAnimations();
+       // HandlePlayerAnimations();
 
         //if (playerModel.moveLeft)
         //{
@@ -58,16 +58,23 @@ public class PlayerController
         if(horizontalInput > 0.01)
         {
             playerView.transform.localScale = new Vector3(1, 1, 1);
+            // playerModel.playerFaceDirection = PlayerModel.PlayerFaceDirection.RIGHT;
+            playerModel.isFacingDef = true;
         }
         else if(horizontalInput < -0.01)
         {
             playerView.transform.localScale = new Vector3(-1, 1, 1);
+            // playerModel.playerFaceDirection = PlayerModel.PlayerFaceDirection.LEFT;
+            playerModel.isFacingDef = false;
         }
         
         if(playerModel.isJumping )
-        {
+        { 
             //playerView.rigidbody.velocity = new Vector2(playerView.rigidbody.velocity.x, playerModel.moveSpeed);
+            Debug.Log("running jump logic");
+            playerView.rigidbody.velocity = new Vector2(playerView.rigidbody.velocity.x, 0);
             playerView.rigidbody.AddForce(Vector2.up * playerModel.jumpForce, ForceMode2D.Impulse);
+            //playerModel.isJumping = false;
 
         }
 
@@ -78,6 +85,7 @@ public class PlayerController
     }
     public void HandlePlayerInputs()
     {
+        playerModel.isPlatformed = IsPlatformed();
         //if (Input.GetKey(KeyCode.A)) playerModel.moveLeft = true; else playerModel.moveLeft = false;
         //if (Input.GetKey(KeyCode.D)) playerModel.moveRIght = true; else playerModel.moveRIght = false;
         //if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(playerView.GetRigidBody().velocity.y) < 0.001) playerModel.jump = true;
@@ -85,20 +93,29 @@ public class PlayerController
 
         // Physics based movement
         horizontalInput = Input.GetAxis("Horizontal");
-        if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(playerView.GetRigidBody().velocity.y) < 0.001) playerModel.isJumping = true; else playerModel.isJumping = false;
-        if (Input.GetKeyDown(KeyCode.Space)) FireBullet();
+      //  if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(playerView.GetRigidBody().velocity.y) < 0.001) playerModel.isJumping = true; else playerModel.isJumping = false;
+        if (Input.GetKey(KeyCode.W) && playerModel.isPlatformed ) playerModel.isJumping = true; else playerModel.isJumping = false;
+        if (Input.GetKeyDown(KeyCode.Space)) Fire();
     }
 
     public void FlipCharacter()
     {
 
     }
-    public void FireBullet()
+    public bool IsPlatformed()
+    {
+      //  playerModel.playerSize = new Vector2(1f, 0.1f);
+        RaycastHit2D ray = Physics2D.BoxCast(playerView.transform.position,playerModel.playerSize,0f,Vector2.down,playerModel.platformDetLength,playerView.layerMask);
+        Debug.DrawRay(playerView.transform.position, Vector2.down * playerModel.platformDetLength, Color.red);
+        return ray.collider != null;
+
+    }
+    public void Fire()
     {
 
         PlayerAmmoController playerAmmo = playerAmmoPool.RetrieveAmmo();
         //playerAmmoPool.ShowAmmo();
-        playerAmmo.SetAmmo(playerView.bulletSpawnPoint);
+        playerAmmo.SetAmmo(playerView.ammoSpawnPoint, playerAmmoPool,playerModel.isFacingDef);
       
         
       //  newBullet.ConfigureBullet(playerModel.moveRIght, playerModel.moveLeft);
@@ -115,7 +132,7 @@ public class PlayerController
     
 
     }
-    private void HandlePlayerAnimations()
+    public void HandlePlayerAnimations()
     {
         //if (playerModel.moveRIght || playerModel.moveLeft)
         //{
@@ -141,6 +158,14 @@ public class PlayerController
         else
         {
             playerView.GetAnimator().SetBool("IsRunning", false);
+        }
+        if(playerModel.isJumping)
+        {
+            playerView.GetAnimator().SetBool("IsJumping", true);
+        }
+        else
+        {
+            playerView.GetAnimator().SetBool("IsJumping", false);
         }
     }
     public void TakePlayerDamage(float damage)
