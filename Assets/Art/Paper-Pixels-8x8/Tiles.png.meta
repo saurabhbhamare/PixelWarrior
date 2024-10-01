@@ -126,8 +126,8 @@ TextureImporter:
       name: Moon
       rect:
         serializedVersion: 2
-        x: 2
-        y: 635
+        x: 3
+        y: 634
         width: 35
         height: 17
       alignment: 0
@@ -2100,8 +2100,8 @@ TextureImporter:
       name: Tiles_94
       rect:
         serializedVersion: 2
-        x: 0
-        y: 339
+        x: 3
+        y: 351
         width: 80
         height: 11
       alignment: 0
@@ -5859,8 +5859,8 @@ TextureImporter:
       name: f_Tiles_270
       rect:
         serializedVersion: 2
-        x: 16
-        y: 592
+        x: 18
+        y: 596
         width: 12
         height: 8
       alignment: 0
@@ -5982,7 +5982,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fTiles_2
+      name: f_LeftEndPlatform01
       rect:
         serializedVersion: 2
         x: 16
@@ -6003,7 +6003,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_2
+      name: f_RightEndMid01
       rect:
         serializedVersion: 2
         x: 52
@@ -6174,8 +6174,8 @@ TextureImporter:
       name: fTiles_8
       rect:
         serializedVersion: 2
-        x: 8
-        y: 560
+        x: 12
+        y: 525
         width: 12
         height: 24
       alignment: 0
@@ -6704,7 +6704,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6712,6 +6712,237 @@ TextureImporter:
       bones: []
       spriteID: 7c872e7ab3f2d494fa6326788037c526
       internalID: -480353845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_BoxHolder
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 561
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132224a6f66d56e43b13acea0e081b36
+      internalID: -1137780635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_RightBrokenEnd01
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 598
+        width: 5
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009303cdd066452489c2027e2be6dbea
+      internalID: -1547283505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_LeftBrokenEnd01
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 598
+        width: 5
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6f072ff1c8ff74597d97b85be59e18
+      internalID: 145442243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_PlainPlatformLong
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 498
+        width: 80
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f3e02285d56044989b690d3c92f801
+      internalID: 1838310817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_LongPlatformBottomLineWithShadow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 497
+        width: 80
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab00358fcef3cf644b1db393fdee915a
+      internalID: -1320257579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: d_MeasureDistance01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 343
+        width: 50
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f31eeeb522df18429e85ee4668d7a9f
+      internalID: -1702916962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_measureSmall01
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 651
+        width: 7
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1a2be6efe3e174788f00b00979016e
+      internalID: 102957899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_RiverFullSet
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 507
+        width: 64
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd37851ecefdab459284012fdcf1aca
+      internalID: -1604897208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_WoodenBoxForRiver
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 24
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6260bbeb03a8d141a4c97e243c47a0d
+      internalID: 61709516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_LeftPlatformEndnoRect01
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 584
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925eec5a8751e0d419c99a70eab13478
+      internalID: 1005283990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_leftEndRemainingPart01
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 598
+        width: 8
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62f21846d57627459afafc2bff6955c
+      internalID: 890654128
       vertices: []
       indices: 
       edges: []
@@ -6840,7 +7071,6 @@ TextureImporter:
       Tiles_197: 557661975
       Tiles_198: -412033954
       Tiles_199: -1792142969
-      Tiles_2: -2010958330
       Tiles_200: 49127735
       Tiles_201: 481060136
       Tiles_202: -1073026982
@@ -6981,12 +7211,13 @@ TextureImporter:
       Tiles_98: 1599355807
       Tiles_99: 2043668584
       ZigZag_lines: 1049638356
-      fTiles_2: 590318832
+      d_MeasureDistance01: -1702916962
       fTiles_3: 280982922
       fTiles_5: 1834651849
       fTiles_8: 1652013597
       f_ArrowRIght[White]: 707730543
       f_ArrowUP[White]: 1282225882
+      f_BoxHolder: -1137780635
       f_FilledSquare1: 1282225882
       f_FilledSquare2: 670908804
       f_FlowerBlue: -896854261
@@ -6997,14 +7228,22 @@ TextureImporter:
       f_GrassAndStonesFullSet01: -2066978033
       f_InventoryIcon2: -480353845
       f_InventoryPanel1: -259822165
+      f_LeftBrokenEnd01: 145442243
+      f_LeftEndPlatform01: 590318832
       f_LeftPlatform01: 877891689
+      f_LeftPlatformEndnoRect01: 1005283990
+      f_LongPlatformBottomLineWithShadow: -1320257579
       f_NextLevelCheckPoint01: -479394851
       f_PixelWaterMid01: -520822346
       f_PlainPlatform: -1964544408
       f_PlainPlatform04: -51881577
       f_PlainPlatform05: -2054503435
+      f_PlainPlatformLong: 1838310817
       f_PlainPlatformSmall01: -146363528
+      f_RightBrokenEnd01: -1547283505
+      f_RightEndMid01: -2010958330
       f_RightPlatform01: -1505803161
+      f_RiverFullSet: -1604897208
       f_SmallPlainPlatform01: -1309108707
       f_SmallPlatform02: -447204656
       f_SmallTree01: -1766106211
@@ -7042,6 +7281,9 @@ TextureImporter:
       f_Tiles_8: -917803692
       f_Tiles_9: 338132425
       f_WaterSmall01: 941095390
+      f_WoodenBoxForRiver: 61709516
+      f_leftEndRemainingPart01: 890654128
+      f_measureSmall01: 102957899
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

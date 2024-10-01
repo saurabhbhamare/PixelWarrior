@@ -8,6 +8,7 @@ public class PlayerUIController : MonoBehaviour
     public Image playerHealthBar;
     private float healthAmount =100f;
     public Image playerAmmoBar;
+    private float ammoAmount =5;
 
     
 
@@ -20,5 +21,19 @@ public class PlayerUIController : MonoBehaviour
     {
         healthAmount -= damage;
         playerHealthBar.fillAmount = healthAmount / 100;
+    }
+    public void UpdateAmmoBarUIAfterFiring()
+    {
+        ammoAmount --;
+        playerAmmoBar.fillAmount =  ammoAmount  / 5; 
+    }
+    public void ResetAmmoBarUIAfterReloading()
+    {
+
+    }
+    public void ResetPlaytHealthBarUIAfterHealing()
+    {
+        healthAmount = 100f;
+        playerHealthBar.fillAmount = 1;
     }
 }

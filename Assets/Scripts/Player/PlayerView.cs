@@ -9,12 +9,13 @@ public class PlayerView : MonoBehaviour
     private Animator animator;
     public Rigidbody2D rigidbody;
     public Transform ammoSpawnPoint;
-    public PlayerUIController playerUIController;
     public LayerMask layerMask;
+    public Vector2 playerSize;
 
     private bool isOnPlatform;
     void Start()
     {
+        playerSize = new Vector2(0.6f, 0.6f);
         rigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -44,9 +45,8 @@ public class PlayerView : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<StingerBullet>())
         {
-            playerController.TakePlayerDamage(10);
-            //  Debug.Log(playerController.GetPlayerModel().playerHealth);
-            playerUIController.UpdateHealthBarUIAfterTakingDamage(10f);
+            playerController.TakePlayerDamage(20);
+            playerController.playerUIController.UpdateHealthBarUIAfterTakingDamage(20f);
         }
     }
 }

@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 793538277752038673}
   m_Layer: 0
-  m_Name: ' AmmoSpawnPoint'
+  m_Name: AmmoSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,7 +143,7 @@ Transform:
   m_GameObject: {fileID: 2959112835905795387}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.34, y: -0.03, z: 0}
+  m_LocalPosition: {x: 0.3273, y: -0.0417, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -292,7 +292,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00050640106, y: -0.0010293722}
+  m_Offset: {x: -0.078288555, y: 0.00083482265}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -303,7 +303,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.6}
+  m_Size: {x: 0.46341372, y: 0.6215756}
   m_EdgeRadius: 0
 --- !u!50 &52816965346217183
 Rigidbody2D:
@@ -317,10 +317,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 2
+  m_Mass: 2.8
   m_LinearDrag: 1
   m_AngularDrag: 0
-  m_GravityScale: 2.8
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2

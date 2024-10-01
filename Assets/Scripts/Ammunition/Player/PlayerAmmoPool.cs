@@ -12,9 +12,5 @@ public class PlayerAmmoPool : ResourcePool<PlayerAmmoController>
     }
     public PlayerAmmoController RetrieveAmmo() => RetrieveItem();
     protected override PlayerAmmoController InitializeItem() => new PlayerAmmoController(playerAmmoView);
-    public void ShowAmmo()
-    {
-        Debug.Log("ammo");
-    }
 
 }

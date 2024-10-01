@@ -10,13 +10,16 @@ public class PlayerService
     private PlayerAmmoView playerAmmoView;
     public static PlayerController playerController;
     private PlayerAmmoPool playerAmmoPool;
+    private PlayerUIController playerUIController;
+    
 
-    public PlayerService(PlayerView playerView, PlayerAmmoView playerAmmoView)
+    public PlayerService(PlayerView playerView, PlayerAmmoView playerAmmoView,PlayerUIController playerUIController)
     {
         this.playerView = playerView;
         this.playerAmmoView = playerAmmoView;
         playerModel = new PlayerModel();
-        this.playerAmmoPool = new PlayerAmmoPool(playerAmmoView);  
+        this.playerAmmoPool = new PlayerAmmoPool(playerAmmoView);
+        this.playerUIController = playerUIController;
 
         InitializePlayer();
         
@@ -31,7 +34,7 @@ public class PlayerService
 
     private void InitializePlayer()
     {
-         playerController = new PlayerController(playerView, playerModel,playerAmmoPool);
+         playerController = new PlayerController(playerView, playerModel,playerAmmoPool,playerUIController);
          playerView.SetPlayerController(playerController);
     }
     
