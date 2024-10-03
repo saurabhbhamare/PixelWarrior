@@ -12,6 +12,7 @@ public class PlayerView : MonoBehaviour
     public LayerMask layerMask;
     public Vector2 playerSize;
 
+
     private bool isOnPlatform;
     void Start()
     {
@@ -47,6 +48,21 @@ public class PlayerView : MonoBehaviour
         {
             playerController.TakePlayerDamage(20);
             playerController.playerUIController.UpdateHealthBarUIAfterTakingDamage(20f);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Vine"))
+        {
+            playerController.GetPlayerModel().isUsingVine = true; 
+            Debug.Log("Vine detected");
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Vine"))
+        {
+            playerController.GetPlayerModel().isUsingVine = false;
         }
     }
 }

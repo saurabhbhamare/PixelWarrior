@@ -80,6 +80,14 @@ public class PlayerController
             //playerModel.isJumping = false;
 
         }
+        if(playerModel.isUsingVine)
+        {
+            playerView.rigidbody.gravityScale = -1f;
+        }
+        else
+        {
+            playerView.rigidbody.gravityScale = 3;
+        }
 
     }
     public PlayerModel GetPlayerModel()
@@ -97,8 +105,9 @@ public class PlayerController
         // Physics based movement
         horizontalInput = Input.GetAxis("Horizontal");
         //  if (Input.GetKeyDown(KeyCode.W) && Mathf.Abs(playerView.GetRigidBody().velocity.y) < 0.001) playerModel.isJumping = true; else playerModel.isJumping = false;
-        if (Input.GetKey(KeyCode.W) && playerModel.isPlatformed) playerModel.isJumping = true; else playerModel.isJumping = false;
-        if (Input.GetKeyDown(KeyCode.Space)) Fire();
+        if (Input.GetKey(KeyCode.LeftShift) && playerModel.isPlatformed) playerModel.isJumping = true; else playerModel.isJumping = false;
+        //if (Input.GetKeyDown(KeyCode.Space)) Fire();
+        if (Input.GetMouseButtonDown(0))Fire();
         if (Input.GetKeyDown(KeyCode.H)) Heal();
     }
 

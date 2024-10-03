@@ -10,8 +10,9 @@ public class PlayerModel
     public float jumpForce;
     public float playerHealth;
     public bool isJumping;
+    public bool isUsingVine;
     public bool isPlatformed;
-    public bool isFacingDef;
+    public bool isFacingDef;   // Is Facing Default Direction 
     public float platformDetLength;
     public int ammoStock;
     //public Vector2 playerSize;
