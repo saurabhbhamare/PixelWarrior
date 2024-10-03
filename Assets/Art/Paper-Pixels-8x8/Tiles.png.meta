@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: f_Tiles_32
+      name: f_LikeRope
       rect:
         serializedVersion: 2
         x: 74
@@ -2143,7 +2143,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
+        y: 309
         width: 87
         height: 16
       alignment: 0
@@ -6935,7 +6935,7 @@ TextureImporter:
         width: 8
         height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -6943,6 +6943,48 @@ TextureImporter:
       bones: []
       spriteID: c62f21846d57627459afafc2bff6955c
       internalID: 890654128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: f_MovingMidPlat01
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 211
+        width: 5
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845a9e205f2b9bf47b43951568bf6c0a
+      internalID: -2034370128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: d_BrokenWay01
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 328
+        width: 80
+        height: 1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbd355a41e99924abd5c54777445686
+      internalID: -644836977
       vertices: []
       indices: 
       edges: []
@@ -7211,6 +7253,7 @@ TextureImporter:
       Tiles_98: 1599355807
       Tiles_99: 2043668584
       ZigZag_lines: 1049638356
+      d_BrokenWay01: -644836977
       d_MeasureDistance01: -1702916962
       fTiles_3: 280982922
       fTiles_5: 1834651849
@@ -7232,7 +7275,9 @@ TextureImporter:
       f_LeftEndPlatform01: 590318832
       f_LeftPlatform01: 877891689
       f_LeftPlatformEndnoRect01: 1005283990
+      f_LikeRope: 1944533039
       f_LongPlatformBottomLineWithShadow: -1320257579
+      f_MovingMidPlat01: -2034370128
       f_NextLevelCheckPoint01: -479394851
       f_PixelWaterMid01: -520822346
       f_PlainPlatform: -1964544408
@@ -7270,7 +7315,6 @@ TextureImporter:
       f_Tiles_3: 1217606392
       f_Tiles_30: -1275791202
       f_Tiles_31: 1944533039
-      f_Tiles_32: 1908179531
       f_Tiles_37: 319636114
       f_Tiles_39: 594479799
       f_Tiles_4: -1558101238

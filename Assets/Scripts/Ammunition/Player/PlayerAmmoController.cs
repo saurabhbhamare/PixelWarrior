@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerAmmoController
 {
     public PlayerAmmoView playerAmmoView;
-    public float ammoSpeed = 8f;
+    public float ammoSpeed = 10f;
     public bool movedirDef;
     public Transform ammoSpawnPoint;
     private PlayerAmmoPool playerAmmoPool;
@@ -14,8 +14,6 @@ public class PlayerAmmoController
     {
         this.playerAmmoView = Object.Instantiate(playerAmmoView);
         this.playerAmmoView.SetAmmoController(this);
-      
-        
     }
     public void SetAmmo(Transform ammoTransform,PlayerAmmoPool playerAmmoPool,bool movedir)
     {
@@ -24,7 +22,8 @@ public class PlayerAmmoController
         playerAmmoView.gameObject.transform.position = ammoTransform.position;
         playerAmmoView.gameObject.transform.rotation = ammoTransform.rotation;
         this.movedirDef = movedir;
-        
+        playerAmmoView.DisableAfterDelay();  // Disable Ammo after some delay here(2f)
+      
     }
     public void UpdatePlayerAmmoMotion()
     {
@@ -41,6 +40,11 @@ public class PlayerAmmoController
     {
         playerAmmoView.gameObject.SetActive(false);
         playerAmmoPool.ReturnItem(this);
-
+    }
+   public IEnumerator  DisableAmmoAfterSomeDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        playerAmmoView.gameObject.SetActive(false);
+        playerAmmoPool.ReturnItem(this);
     }
 }

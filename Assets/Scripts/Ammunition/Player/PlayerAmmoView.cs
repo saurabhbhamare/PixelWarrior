@@ -5,6 +5,10 @@ using UnityEngine;
 public class PlayerAmmoView : MonoBehaviour
 {
     public PlayerAmmoController playerAmmoController;
+    private void Start()
+    {
+       // StartCoroutine(playerAmmoController.DestroyAmmoAfterSomeDelay(2f));
+    }
 
     private void Update()
     {
@@ -18,5 +22,9 @@ public class PlayerAmmoView : MonoBehaviour
     {
         Debug.Log("collision happened for bullet view");
         playerAmmoController.HandleCollision();
+    }
+    public void DisableAfterDelay()
+    {
+        StartCoroutine(playerAmmoController.DisableAmmoAfterSomeDelay(1.4f));
     }
 }

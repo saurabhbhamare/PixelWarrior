@@ -125,6 +125,7 @@ public class PlayerController
         PlayerAmmoController playerAmmo = playerAmmoPool.RetrieveAmmo();
         //playerAmmoPool.ShowAmmo();
         playerAmmo.SetAmmo(playerView.ammoSpawnPoint, playerAmmoPool, playerModel.isFacingDef);
+      //  playerAmmo.DestroyAmmoAfterSomeDelay(2f);
         playerUIController.UpdateAmmoBarUIAfterFiring();
 
 
