@@ -5,7 +5,9 @@ using UnityEngine;
 public class ServiceHandler : MonoBehaviour
 {
     [SerializeField] private PlayerView playerView;
+    [SerializeField] private InventoryView inventoryView;  // invenotry visual
     [SerializeField] private PlayerUIController playerUIController;
+    [SerializeField] private ItemView itemView;
     
     
     
@@ -13,7 +15,7 @@ public class ServiceHandler : MonoBehaviour
     private PlayerService playerService;
     private EnemyService enemyService;
  //   private InventoryService inventoryService;
-    [SerializeField] private InventoryService inventoryService;
+    private InventoryService inventoryService;
 
 
     private UIService uiService;
@@ -25,10 +27,13 @@ public class ServiceHandler : MonoBehaviour
     }
     private void InitializeServices()
     {
-        playerService = new PlayerService(playerView,playerAmmoView,playerUIController);
+        playerService = new PlayerService(playerView,playerAmmoView,playerUIController,inventoryView);
         enemyService = new EnemyService(playerService);
-      //  inventoryService = new InventoryService();
+        inventoryService = new InventoryService(inventoryView,itemView);
         uiService = new UIService(playerUIController);
-
+    }
+    private void SetDependencies()
+    {
+       // playerService.
     }
 }

@@ -5,33 +5,31 @@ using UnityEngine;
 public class PlayerModel
 {
     public float moveSpeed;
- //   public bool moveRIght;
- //   public bool moveLeft;
     public float jumpForce;
     public float playerHealth;
     public bool isJumping;
     public bool isUsingVine;
     public bool isPlatformed;
-    public bool isFacingDef;   // Is Facing Default Direction 
+    public bool isFacingDef;   // Is Player Facing Default Direction 
     public float platformDetLength;
     public int ammoStock;
-    //public Vector2 playerSize;
- 
-    
-    // public BulletPool bulletPool;
-
+    public bool isReloadingWeapon;
+    public float reloadingTime;
+    public int maxAmmo;
+    public float vineMoveSpeed;
+    public float defaultGravityScale; 
     public PlayerModel()
     {
-        //  bulletPool = new BulletPool();
         playerHealth = 100f;
         moveSpeed = 6f;
         jumpForce = 30f;
-       // playerSize = new Vector2(0.6f, 0.6f);
         isFacingDef = true;
         platformDetLength = 0.2f;
+        maxAmmo = 10; 
         ammoStock = 10;
-
-      //  playerFaceDirection = PlayerFaceDirection.RIGHT;
+        reloadingTime = 2f;
+        vineMoveSpeed = 4f;
+        defaultGravityScale = 3f;
     }
     public float GetPlayerJumpForce()
     {
@@ -42,5 +40,6 @@ public class PlayerModel
         LEFT,
         RIGHT
     }
+
 }
 

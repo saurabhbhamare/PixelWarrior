@@ -5,11 +5,6 @@ using UnityEngine;
 public class PlayerAmmoView : MonoBehaviour
 {
     public PlayerAmmoController playerAmmoController;
-    private void Start()
-    {
-       // StartCoroutine(playerAmmoController.DestroyAmmoAfterSomeDelay(2f));
-    }
-
     private void Update()
     {
         playerAmmoController.UpdatePlayerAmmoMotion();

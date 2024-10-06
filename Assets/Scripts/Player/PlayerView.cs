@@ -60,9 +60,34 @@ public class PlayerView : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
+        
         if (collision.CompareTag("Vine"))
         {
             playerController.GetPlayerModel().isUsingVine = false;
         }
+        else if (collision.CompareTag("Pickups"))
+        {
+            //dont know what's happening here
+            ItemVisual itemVisual = collision.gameObject.GetComponent<ItemVisual>();
+            if (itemVisual)
+            {
+                playerController.RetrieveInventoryView().RetrieveInventoryController().AddItemTotheInventory(itemVisual.RetrieveItemController());
+              //  itemVisual.RetrieveItemController();
+            }
+            Destroy(collision.gameObject);
+        }
+    }
+    public void ReloadWeapon()
+    {
+        StartCoroutine(StartCoroutineForReloading());
+    }
+    public IEnumerator StartCoroutineForReloading()
+    {
+        playerController.GetPlayerModel().isReloadingWeapon = true;
+        yield return new WaitForSeconds(3f);
+        playerController.GetPlayerModel().ammoStock = playerController.GetPlayerModel().maxAmmo;
+        playerController.playerUIController.ResetAmmoBarUIAfterReloading();
+        playerController.GetPlayerModel().isReloadingWeapon = false;
+
     }
 }

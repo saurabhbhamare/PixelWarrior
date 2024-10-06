@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryModel : MonoBehaviour
+public class InventoryModel 
 {
-    // Start is called before the first frame update
-    void Start()
+    public bool isInventoryOpened;
+    private List<ItemController> itemUISlotList = new List<ItemController>();
+
+    public InventoryModel()
     {
-        
+        isInventoryOpened = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public List<ItemController> RetrieveItemControllerList()
     {
-        
+        return itemUISlotList;
     }
+    // list of inventory items 
 }
