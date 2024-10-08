@@ -23,7 +23,21 @@ public class InventoryController
     }
     public void AddItemTotheInventory(ItemController item)
     {
+        //foreach(ItemController itemController in inventoryModel.RetrieveItemControllerList())
+        //{
+        //    if(item ==itemController)
+        //    {
+        //        itemController.itemQuantity++;
+        //        return;
+        //    }
+
+        //}
+        if(IsInventoryItemAlreadyPresent(item))
+        {
+
+        }
         ItemView tempItemView = GameObject.Instantiate<ItemView>(itemView);
+        tempItemView.itemImage.sprite = item.itemSO.itemSprite;
         tempItemView.gameObject.SetActive(true);
         tempItemView.transform.SetParent(inventoryView.parentTransform);
         item.SetItemView(tempItemView);
@@ -46,15 +60,15 @@ public class InventoryController
             HideInventory();
         }
     }
-    //public bool IsInventoryItemAlreadyPresent(ItemController item)
-    //{
-    //    foreach (ItemController tempItem in inventoryModel.RetrieveItemControllerList())
-    //    {
-    //        if (item == tempItem)
-    //        {
-    //            return true;
-    //        }
-    //    }
-    //    return false;
-    //}
+    public bool IsInventoryItemAlreadyPresent(ItemController item)
+    {
+        foreach (ItemController tempItem in inventoryModel.RetrieveItemControllerList())
+        {
+            if (item.itemName == tempItem.itemName)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }

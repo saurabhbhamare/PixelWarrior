@@ -15,5 +15,6 @@ public class InventoryService : MonoBehaviour
         InventoryModel inventoryModel = new InventoryModel();
         inventoryController = new InventoryController(inventoryView, inventoryModel,itemView);
         inventoryView.SetInventoryController(inventoryController);
+        
     }
 }

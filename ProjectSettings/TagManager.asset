@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Vine
   - Pickups
+  - VCamSwitch
   layers:
   - Default
   - TransparentFX

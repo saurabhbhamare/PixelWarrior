@@ -41,7 +41,7 @@ public class PlayerAmmoController
         playerAmmoView.gameObject.SetActive(false);
         playerAmmoPool.ReturnItem(this);
     }
-   public IEnumerator  DisableAmmoAfterSomeDelay(float delay)
+   public IEnumerator DisableAmmoAfterSomeDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         playerAmmoView.gameObject.SetActive(false);

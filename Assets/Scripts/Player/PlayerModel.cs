@@ -1,9 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
 public class PlayerModel
 {
+    public float horizontalInput;
+    public float verticalInput;
     public float moveSpeed;
     public float jumpForce;
     public float playerHealth;

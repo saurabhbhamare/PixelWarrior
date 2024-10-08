@@ -57,6 +57,10 @@ public class PlayerView : MonoBehaviour
             playerController.GetPlayerModel().isUsingVine = true; 
             Debug.Log("Vine detected");
         }
+        if (collision.CompareTag("VCamSwitch"))
+        {
+            SwitchVirtualCameraSettings.Instance.UpdateVirtualCameraView();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
